@@ -1,19 +1,40 @@
-# MLOps Project
+# MLOps Project --- Group G178
 
-This repository contains the code and workflow for the team MLOps project. The goal of **Stage 1** is to set up the development environment, obtain the data, and run a baseline model.
+## Project Details
+- **Group ID**: G178
+- **Problem ID**: MP262 --- ATM Cash Demand (Surat)
+- **Client**: Surat Cooperative Bank
+- **Target Variable**: `withdrawal_thousand_rs` (Regression, Evaluation Metric: MAE)
+- **Faculty**: Richa Sharma (Batch 47)
 
-## Project layout
+## Team Members
+| Enrolment No. | Name | GitHub / Role |
+|---|---|---|
+| S24CSEU1832 | Harshit Ranjan | Data / MLOps |
+| S24CSEU0097 | Uday Singh Pratap | Team Member |
+| S24CSEU1852 | Prithul Jaiswal | Team Member |
+| S24CSEU1855 | Yashvardhan Singh | Team Member |
+
+## Project Layout
 ```
 Mlops-project/
-├─ assets/            # diagrams, screenshots
-├─ data/
-│   └─ raw/          # raw datasets (tracked with DVC)
-├─ docs/              # documentation (run logs, notes)
-├─ src/               # source code
-│   └─ baseline.py   # simple baseline model script
-├─ .gitignore
-├─ requirements.txt
-└─ README.md
+├── data/
+│   └── raw/
+│       ├── train.csv.dvc          # DVC tracking for training data
+│       ├── later.csv.dvc          # DVC tracking for later data
+│       └── holdout_features.csv   # Features for holdout prediction
+├── docs/                          # Documentation, GROUP.md, PROBLEM.md, HANDBOOK.md
+├── reports/
+│   └── findings.yaml              # Findings & audit report
+├── src/                           # Source code
+├── .dvc/                          # DVC internal configuration
+├── .dvcignore
+├── .gitignore
+├── requirements.txt
+└── README.md
 ```
 
-The next steps are documented in the project handbook (see `docs/`).
+## Stage 1 Setup
+- Raw datasets placed in `data/raw/` (`train.csv`, `later.csv`, `holdout_features.csv`).
+- `train.csv` and `later.csv` are tracked with DVC.
+- `holdout_features.csv` is tracked with Git.

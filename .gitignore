@@ -3,11 +3,6 @@
 __pycache__/
 *.pyc
 
-# DVC files
-.dvc/
-
-# Data files (large)
-data/raw/
 
 # mlflow artifacts
 mlruns/
