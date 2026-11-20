@@ -1,0 +1,17 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# DVC files
+.dvc/
+
+# Data files (large)
+data/raw/
+
+# mlflow artifacts
+mlruns/
+
+# OS files
+Thumbs.db
+.DS_Store
